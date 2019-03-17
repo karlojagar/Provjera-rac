@@ -1,22 +1,15 @@
 #include<stdio.h>
 main()
 {
-	int i, a, n, min;
-	printf("Unesi broj ponavljanja unosa broja:");
-	scanf("%d", &n);
-	printf("Unesi prvi broj:");
+	int a, kv, aa;
+	printf("Ucitaj dvoznamenkasti broj:");
 	scanf("%d", &a);
-	min = a;
-	for (i = 2; i <= n; i++) {
-		printf("\n Unesi %d broj:", i);
+	while (a > 9 && a < 100)
+	{
+		aa = a % 10;
+		kv = aa * aa;
+		printf("%d", kv);
+		print("Ucitaj dvoznamenkasti broj:");
 		scanf("%d", &a);
-		if (a < min)
-			min = a;
 	}
-	if (min % 2 == 0 && min != 0)
-		printf("\n Najmanji uneseni broj je %d koji je i neparan\n", min);
-	else if (min % 2 != 0)
-		printf("\n Najmanji uneseni broj je %d koji je i paran\n", min);
-	else
-		printf("\n Najmanji uneseni broj je %d!\n", min);
 }
