@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+	int a, br=0, zbr=0;
+	float ars;
+	printf("Ucitaj broj:");
+	scanf("%d", &a);
+	while (a != 0)
+	{
+		br++;
+		zbr = zbr + a;
+		printf("Ucitaj broj:");
+		scanf("%d", &a);
+	}
+		ars = (float)zbr / br;
+		print("Aritmeticka sredina je %.2f",ars);
+}
