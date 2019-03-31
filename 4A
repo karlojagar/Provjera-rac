@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+	int a, n = 0, suma = 0, des;
+	printf("Unesi prvi broj:");
+	scanf("%d", &a);
+	while (a<1000 && a>99)
+	{
+		des = a % 100 / 10;
+		suma = suma + des;
+		if (a < 5)
+			n++;
+		printf("Unesi sljedeci broj:");
+		scanf("%d", &a);
+	}
+	printf("\n Zbroj znamenki desetica je %d,a medu njima je %d brojeva koji su manji od 5!\n", suma, n);
+}
