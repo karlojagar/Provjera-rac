@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int i, a, suma = 0, n = 0;
+	float ar;
+	for (i = 1; i <= 7; i++)
+	{
+		printf("\n Unesi %d broj:", i);
+		scanf("%d", &a);
+		if (a < 20 && a % 2 != 0)
+		{
+			suma = suma + a;
+			n++;
+		}
+	}
+	ar = (float)suma / n;
+	printf("\n Aritmeticka sredina unesenih neparnih brojeva <20 je:%.2f\n", ar);
+}
