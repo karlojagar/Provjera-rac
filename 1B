@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int i, a, kv;
+	float kor;
+	printf("Unesi prvi broj:");
+	scanf("%d", &a);
+	for (i = 1; i <= 15; i++)
+	{
+		if (a > 0)
+		{
+			kor = sqrt(a);
+			printf("\n Korjen broja je:%.2f.\n", kor);
+		}
+		if (a < 0)
+		{
+			kv = a * a;
+			printf("\n Kvadrat broja je:%d.\n", kv);
+		}
+		printf("\n Unesi sljedeci broj:");
+		scanf("%d", &a);
+	}
+}
