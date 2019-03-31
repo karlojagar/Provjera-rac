@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int n, br = 0, suma = 0;
+	float a, ars;
+	printf("Unesi prvi broj:");
+	scanf("%f", &a);
+	while (a - (int)a != 0);
+	{
+		br++;
+		suma = suma + (int)a;
+		printf("Unesi sljedeci broj:");
+		scanf("%f", &a);
+	}
+	ars = (float)suma / br;
+	printf("\n Aritmeticka sredina svih ucitanih cijelih bojeva je:%.2f.\n", ars);
+}
