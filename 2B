@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int i, a, n, jed, suma = 0;
+	float ars;
+	printf("Koliko brojeva zelis ucitati:");
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++)
+	{
+		printf("Unesi %d broj:", i);
+		scanf("%d", &a);
+		jed = a % 10;
+		suma = suma + jed;
+	}
+	ars = (float)suma / n;
+	printf("\n Aritmeticka sredina jedinica broja je:%.2f.\n", ars);
+}
