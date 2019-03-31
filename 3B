@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int a, br = 0, suma = 0;
+	printf("Unesi prvi broj:");
+	scanf("%d", &a);
+	while (a > 10 && a%3==0)
+	{
+		br++;
+		suma = suma + a;
+		printf("Unesi sljedeci broj:");
+		scanf("%d", &a);
+	}
+	printf("\n Ucitano je %d brojeva, a njihov zbroj je:%d.\n", br, suma);
+}
