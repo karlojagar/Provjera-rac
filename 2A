@@ -19,5 +19,5 @@ main()
 	else if (min % 2 != 0)
 		printf("\n Najmanji uneseni broj je %d koji je i paran.\n", min);
 	else
-		("\n Najmanji uneseni broj je %d\n", min);
+		printf("\n Najmanji uneseni broj je %d\n", min);
 }
