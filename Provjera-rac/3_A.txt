@@ -1,0 +1,16 @@
+#include<stdio.h>
+main()
+{
+	int br = 0;
+	float a,zbr=0;
+	printf("Ucitaj decimalni broj:");
+	scanf("%f", &a);
+	while (a-(int)a !=0)
+	{
+		br++;
+		zbr = zbr + (a - (int)a);
+		printf("Ucitaj decimalni broj:");
+		scanf("%f", &a);
+	}
+		print("Ucitana su %d,a zbroj njihovih decimalnih dijelova je %.2f",br,zbr);
+}

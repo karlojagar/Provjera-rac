@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+	int a, i, zbr = 0;
+	for (i = 1; i <= 8; i++) {
+		printf("Ucitaj broj:");
+		scanf("%d", &a);
+		if (a%2 !=0 && a%3==0)
+			zbr=zbr+a;
+	}
+	printf("Takvih je brojeva %d", zbr);
+}

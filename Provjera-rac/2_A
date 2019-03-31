@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+	int a, kv, aa;
+	printf("Ucitaj dvoznamenkasti broj:");
+	scanf("%d", &a);
+	while (a > 9 && a < 100)
+	{
+		aa = a % 10;
+		kv = aa * aa;
+		printf("%d", kv);
+		print("Ucitaj dvoznamenkasti broj:");
+		scanf("%d", &a);
+	}
+}
