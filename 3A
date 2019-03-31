@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int a;
+	float k;
+	printf("Unesi prvi broj:");
+	scanf("%d", &a);
+	while (a != 0)
+	{
+		if (a < 0)
+		{
+			k = (float)a*a;
+			printf("\n Kvadrat broja je:%.0f!\n", k);
+		}
+		else if (a > 0)
+		{
+			k = (float)sqrt(a);
+			printf("\n Kvadrat broja je:%.2f!\n", k);
+		}
+		printf("Unesi sljedeci broj:");
+		scanf("%d", &a);
+	}
+}
