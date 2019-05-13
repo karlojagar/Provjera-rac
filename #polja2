@@ -1,0 +1,25 @@
+Učitati 10 brojeva u polje i ispisati one čija je vrijednost veća od aritmetičke sredine tih 10 brojeva.
+
+#include <stdio.h>
+ main ()
+ {
+    int a[10], i, zbroj=0;
+    float ars;
+  
+    for(i=0; i<10; i++)
+    {
+        printf("\nUčitaj %d. broj u polje: ", i+1);
+        scanf("%d", &a[i]);
+        zbroj = zbroj + a[i];
+    }
+  
+    ars = (float)zbroj / 10;
+
+    printf("\nAritmetička sredina je %.2f:\n", ars);
+    printf("\nBrojevi veći od arit. sredine su:\n");
+  
+    for(i=0; i<10; i++)
+        if(a[i] > ars)
+            printf("\n%d", a[i]);
+ 
+}
