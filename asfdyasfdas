@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+main(){
+	char r[20], b[20];
+	int i, x, y, max;
+	printf("upisi prvu rijec");
+	gets(r);
+	x = strlen(r);
+	printf("upisi drugu rijec");
+	gets(b);
+	y = strlen(b);
+
+	if (y<x)
+		printf("dulja rijec je %s\n", r);
+	else if(x<y)
+		printf("dulja rijec je %s\n", b);
+	else
+		printf("jednake su");
+
+
+}
