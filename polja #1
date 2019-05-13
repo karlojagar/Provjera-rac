@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+main ()
+ {
+    int a[100], min, n, i;
+    
+    printf("\nKoliko će brojeva biti učitano u polje? ");
+    scanf("%d", &n);
+
+    printf("\nUčitaj 1. broj: ");
+    scanf("%d", &a[0]);
+    min = a[0];
+    
+    for(i=1; i < n; i++)
+    {
+        printf("\nUčitaj %d. broj:", i+1);
+        scanf("%d", &a[i]);
+    
+        if(a[i] < min)
+            min = a[i];
+    }
+    
+    printf("\nNajmanji učitani broj je %d.\n", min);
+}
