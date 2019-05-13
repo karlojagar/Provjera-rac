@@ -9,8 +9,8 @@ ucitaj prvu rijec
     gets(r);
 
     d=strlen(r);
-   for(i=0;r[i]!=´ ´;i++)
+   for(i=0;r[i]!=' ';i++)
    {
    printf("%c",r[i]);
    }
-   }
+}
