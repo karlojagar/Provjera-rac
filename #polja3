@@ -1,0 +1,34 @@
+Učitati rečenicu. Koliko slova 'e' sadrži druga riječ?
+
+#include <stdio.h>
+#include <string.h>
+
+void main() {
+    char r[100];
+    int i, n, brojac=0;
+
+    printf("Učitaj rečenicu:");
+    gets(r);
+
+    n=strlen(r);
+
+    i=0;
+    while (r[i]!=' ' && i!=n)
+        i++;
+
+    if (i==n)
+        printf("\nRečenica sadrži samo jednu riječ");
+    else {
+        i++;
+    
+        while (r[i]!=' ' && i!=n) {
+            if(r[i]=='e' || r[i]=='E')
+                brojac++;
+            i++;
+        }
+
+        printf ("\nDruga riječ sadrži %d slova \'e\'", brojac);
+    }
+
+    return;
+}
