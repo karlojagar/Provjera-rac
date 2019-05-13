@@ -1,0 +1,16 @@
+ucitaj prvu rijec
+#include <stdio.h>
+#include <string.h>
+ main() {
+    char r[50];
+    int i, d;
+
+    printf("Učitaj rečenicu:");
+    gets(r);
+
+    d=strlen(r);
+   for(i=0;r[i]!=´ ´;i++)
+   {
+   printf("%c",r[i]);
+   }
+   }
