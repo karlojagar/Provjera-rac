@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+ main() {
+	char r[10];
+	int i, j, t, d=0;
+	printf("\nUlaz: ");
+	gets(r);
+	d = strlen(r);
+	for (i = 0; i < 5; i++)
+		for (j = i + 1; j < 6; j++)
+			if (r[i] > r[j])
+			{
+				t = r[i];
+				r[i] = r[j];
+				r[j] = t;
+			}
+			printf("Izlaz");
+	for (i = 0; i < 6; i++)
+		printf("%c", r[i]);
+}
