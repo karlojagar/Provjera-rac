@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+main()
+{
+	int i, brojevi[7], trazeniBroj, brojPonavljanja = 0;
+
+	for (i = 0; i < 7; i++)
+	{
+		printf("Unesi %d. broj u polje: ", i + 1);
+		scanf("%d", &brojevi[i]);
+	}
+
+	printf("Unesi trazeni broj: ");
+	scanf("%d", &trazeniBroj);
+
+	for (i = 0; i < 7; i++)
+	{
+		if (brojevi[i] == trazeniBroj)
+		{
+			brojPonavljanja++;
+			break;
+		}
+	}
+
+	if (brojPonavljanja != 0)
+		printf("Broj se prvi puta pojavljuje na %d. poziciji.\n", i + 1);
+
+	else
+		printf("Trazeni broj ne postoji.\n");
+}
