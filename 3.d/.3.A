@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+main() {
+	char broj[5], t;
+	int i, j;
+
+	printf("\nUčitaj broj:");
+	gets(broj);
+
+	for(i=0; i<3; i++)
+	{
+		for(j=i+1; j<4; j++)
+		{
+			if(broj[i] > broj[j])
+			{
+				t = broj[i];
+				broj[i] = broj[j];
+				broj[j] = t;
+			}
+		}
+	}
+
+	printf("\nNajmanji četveroznamenkasti broj je: ");
+
+	for(i=0; i<4; i++)
+		printf("%c", broj[i]);
+}
